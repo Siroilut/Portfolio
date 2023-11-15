@@ -1,0 +1,73 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  text-align: center;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+}
+
+main {
+  padding: 20px;
+}
+.projects, .skills {
+  margin-bottom: 30px;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 5px;
+}
+
+footer button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.lista-projetos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.projetos-recentes {
+  max-width: 300px;
+  padding: 15px;
+  margin: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.projetos-recentes h3 {
+  margin-bottom: 10px;
+}
+
+.projetos-recentes a {
+  display: block;
+  margin-top: 10px;
+  color: #4CAF50;
+}
+
+.projetos-recentes a:hover {
+  text-decoration: underline;
+}
+
+.projetos-recentes img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
