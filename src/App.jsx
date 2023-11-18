@@ -1,7 +1,6 @@
 import './App.css'
-import Home from './routes/Home'
 import { useState, useEffect } from 'react'
-import projects from '../projetos/projetos.json'
+import projectsJSON from '../projetos/projetos.json'
 
 // link entre paginas
 import Navbar from './components/Navbar'
@@ -11,14 +10,14 @@ import SearchForm from './components/SearchForm'
 import ProjetosRecentes from './components/ProjetosRecentes.jsx'
 
 function App() {
-  const [projects, setProjects] = useState([]);
+  const [projects, setProjects] = useState(projectsJSON);
   
   useEffect(() => {
     const fetchProjects = async () => {
       try {
-        const response = await fetch('./projetos.json');
-        const data = await response.json();
-        setProjects(projectData);
+        
+        
+        setProjects(projectsJSON);
       } catch (error) {
         console.error('Erro ao buscar projetos:', error);
       }
